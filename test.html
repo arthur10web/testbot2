@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">textarea {
+      width: 0px;
+      border: 0px;
+      padding-right: 0;
+      color: white; /*цвет текста*/
+  }
+  p{
+    color:#000000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  input[type="radio"]{
+    width: 15px;
+  }
+  .wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.block{
+  background-color:darkgray;
+text-align: left;
+border-radius: 10px;
+text-align: center;}
+  </style>
+</head>
+<form  action="https://formspree.io/f/xyyonlry"
+method="POST" >
+   <div class="wrapper">
+      <div class="block"><b>Ваше имя и Фамилия:</b><br>
+        <input type="text" name="name" size="4" max-width="100px">
+       </div>
+      
+   <div class="block"><p>1.У вас хороший аппетит?<br>
+    <label>
+      <input type="radio" name="q1" value="Да">
+      Да</label>      
+</label>
+    <br>
+    <label>
+      <input type="radio" name="q1" value="Нет">
+      Нет</label>
+    <br>
+  </p></div> 
+    <div class="block"><p>2.По утрам вы обычно чувствуете, что выспались и отдохнули?<br>
+      <label>
+        <input type="radio" name="q2" value="Да">
+        Да</label>
+      <br>
+      <label>
+        <input type="radio" name="q2" value="Нет">
+        Нет</label>
+      <br>
+    </p></div>
+      <div class="block"><p>3. В вашей повседневной жизни масса интересного?<br>
+        <label>
+          <input type="radio" name="q3" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q3" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>4. Вы работаете с большим напряжением?<br>
+        <label>
+          <input type="radio" name="q4" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q4" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>5.Временами вам приходят в голову такие нехорошие мысли, что о них лучше не рассказывать?<br>
+        <label>
+          <input type="radio" name="q5" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q5" value="Нет">
+          Нет</label>
+        <br>
+      </p>
+      </div>
+      <div class="block"><p>6.У вас очень редко бывает запор?<br>
+        <label>
+          <input type="radio" name="q6" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q6" value="Нет">
+          Нет</label>
+        <br>
+      </p>
+      </div>
+      <div class="block"><p>7.Иногда вам очень хотелось навсегда уйти из дома?<br>
+        <label>
+          <input type="radio" name="q7" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q7" value="Нет">
+          Нет</label>
+        <br>
+      </p>
+      </div>
+      <div class="block"><p>8.Временами у вас бывают приступы неудержимого смеха или плача?<br>
+        <label>
+          <input type="radio" name="q8" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q8" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">
+        <p>9. Временами вас беспокоят тошнота и позывы на рвоту?<br>
+          <label>
+            <input type="radio" name="q9" value="Да">
+            Да</label>
+          <br>
+          <label>
+            <input type="radio" name="q9" value="Нет">
+            Нет</label>
+          <br>
+        </p></div>
+      <div class="block"><p>10.У вас такое впечатление, что вас никто не понимает?<br>
+        <label>
+          <input type="radio" name="q10" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q10" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>11.Иногда вам хочется выругаться?<br>
+        <label>
+          <input type="radio" name="q11" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q11" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>12.Каждую неделю вам снятся кошмары?<br>
+        <label>
+          <input type="radio" name="q12" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q12" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>13.Вам труднее сосредоточиться, чем большинству людей?<br>
+        <label>
+          <input type="radio" name="q13" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q13" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>14. С вами происходили (или происходят) странные вещи?<br>
+        <label>
+          <input type="radio" name="q14" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q14" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>15.Вы достигли бы в жизни гораздо большего,если бы люди не были настроены против вас.?<br>
+        <label>
+          <input type="radio" name="q15" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q15" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>16.В детстве вы одно время совершали кражи?<br>
+        <label>
+          <input type="radio" name="q16" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q16" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>17.Бывало, что по несколько дней, недель или целых месяцев вы ничем не могли заняться, потому что
+        трудно было заставить себя включиться в работу?<br>
+        <label>
+          <input type="radio" name="q17" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q17" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>18.У вас прерывистый и беспокойный сон?<br>
+        <label>
+          <input type="radio" name="q18" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q18" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>19.Когда вы находитесь среди людей, вам слышатся странные вещи?<br>
+        <label>
+          <input type="radio" name="q19" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q19" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>20.Большинство знающих вас людей не считают вас неприятным человеком?<br>
+        <label>
+          <input type="radio" name="q20" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q20" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>21.Вам часто приходилось подчиняться кому-нибудь, кто знал меньше вашего?<br>
+        <label>
+          <input type="radio" name="q21" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q21" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>22.Большинство людей довольны своей жизньюболее, чем вы?<br>
+        <label>
+          <input type="radio" name="q22" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q22" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>23.Очень многие преувеличивают свои несчастья,
+        чтобы добиться сочувствия и помощи?<br>
+        <label>
+          <input type="radio" name="q23" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q23" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>24.Иногда вы сердитесь?<br>
+        <label>
+          <input type="radio" name="q24" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q24" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>25. Вам определенно не хватает уверенности в себе?<br>
+        <label>
+          <input type="radio" name="q25" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q25" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>26.У вас часто бывают подергивания в мышцах?<br>
+        <label>
+          <input type="radio" name="q26" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q26" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>27.У вас часто бывает чувство, как будто вы сделали что-то неправильное или нехорошее?<br>
+        <label>
+          <input type="radio" name="q27" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q27" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>28.Обычно вы удовлетворены своей судьбой?<br>
+        <label>
+          <input type="radio" name="q28" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q28" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>29.Некоторые так любят командовать, что вам
+        хочется все сделать наперекор, хотя вы знаете, что
+        они правы?<br>
+        <label>
+          <input type="radio" name="q29" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q29" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>30.Вы считаете, что против вас что-то замышляют?<br>
+        <label>
+          <input type="radio" name="q30" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q30" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>31.Большинство людей способно добиваться
+        выгоды не совсем честным путем?<br>
+        <label>
+          <input type="radio" name="q31" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q31" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>32.Вас часто беспокоит желудок?<br>
+        <label>
+          <input type="radio" name="q32" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q32" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>33.Часто вы не можете понять, почему накануне
+        вы были в плохом настроении и раздражены?<br>
+        <label>
+          <input type="radio" name="q33" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q33" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>34.Временами ваши мысли текли так быстро,
+        что вы не успевали их высказывать<br>
+        <label>
+          <input type="radio" name="q34" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q34" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>35. Вы считаете, что ваша семейная жизнь не хуже, чем у большинства ваших знакомых?<br>
+        <label>
+          <input type="radio" name="q35" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q35" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>36. Временами вы уверены в собственной бесполезности?<br>
+        <label>
+          <input type="radio" name="q36" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q36" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p> 37.В последние годы ваше самочувствие было
+        в основном хорошим?<br>
+        <label>
+          <input type="radio" name="q37" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q37" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>38. У вас бывали периоды, во время которых вы что-то делали и потом не могли вспомнить, что именно?<br>
+        <label>
+          <input type="radio" name="q38" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q38" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>39.Вы считаете, что вас часто незаслуженно наказывали?<br>
+        <label>
+          <input type="radio" name="q39" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q39" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p> 40.Вы никогда не чувствовали себя лучше, чем
+        теперь?<br>
+        <label>
+          <input type="radio" name="q40" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q40" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>41. Вам безразлично, что думают о вас другие?<br>
+        <label>
+          <input type="radio" name="q41" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q41" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>42.С памятью у вас все благополучно?<br>
+        <label>
+          <input type="radio" name="q42" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q42" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>43.Вам трудно поддерживать разговор с человеком, с которым вы только что познакомились?<br>
+        <label>
+          <input type="radio" name="q43" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q43" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>44.Большую часть времени вы чувствуете общую слабость?<br>
+        <label>
+          <input type="radio" name="q44" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q44" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>45. У вас редко болит голова?<br>
+        <label>
+          <input type="radio" name="q45" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q45" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>46.Иногда вам бывало трудно сохранить равновесие при ходьбе?<br>
+        <label>
+          <input type="radio" name="q46" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q46" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>47.Не все ваши знакомые вам нравятся?<br>
+        <label>
+          <input type="radio" name="q47" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q47" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block">  <p>48.Есть люди, которые пытаются украсть ваши
+        идеи и мысли?<br>
+        <label>
+          <input type="radio" name="q48" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q48" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>49. Вы считаете, что совершали поступки, которые нельзя простить?<br>
+        <label>
+          <input type="radio" name="q49" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q49" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>50.Вы считаете, что вы слишком застенчивы?<br>
+        <label>
+          <input type="radio" name="q50" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q50" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>51.Вы почти всегда о чем-нибудь тревожитесь?<br>
+        <label>
+          <input type="radio" name="q51" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q51" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>52.Ваши родители часто не одобряли ваших
+        знакомств?<br>
+        <label>
+          <input type="radio" name="q52" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q52" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>53.Иногда вы немного сплетничаете?<br>
+        <label>
+          <input type="radio" name="q53" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q53" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>54.Временами вы чувствуете, что вам необыкновенно легко принимать решения?<br>
+        <label>
+          <input type="radio" name="q54" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q54" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>55.У вас бывает сильное сердцебиение, и вы
+        часто задыхаетесь?<br>
+        <label>
+          <input type="radio" name="q55" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q55" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>56.Вы вспыльчивы, но отходчивы?<br>
+        <label>
+          <input type="radio" name="q56" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q56" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"> <p>57.У вас бывают периоды такого беспокойства,
+        что трудно усидеть на месте?<br>
+        <label>
+          <input type="radio" name="q57" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q57" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>58.Ваши родители и другие члены семьи часто
+        придираются к вам?<br>
+        <label>
+          <input type="radio" name="q58" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q58" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>59.Ваша судьба никого особенно не интересует?<br>
+        <label>
+          <input type="radio" name="q59" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q59" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>60.Вы не осуждаете человека, который не прочь
+        использовать в своих интересах ошибки другого?<br>
+        <label>
+          <input type="radio" name="q60" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q60" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>61.Иногда вы полны энергии?<br>
+        <label>
+          <input type="radio" name="q61" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q61" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>62.За последнее время у вас ухудшилось зрение?<br>
+        <label>
+          <input type="radio" name="q62" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q62" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>63.Часто у вас звенит или шумит в ушах?<br>
+        <label>
+          <input type="radio" name="q63" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q63" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>64.В вашей жизни были случаи (может быть,
+        только один), когда вы чувствовали, что на вас действует гипноз?<br>
+        <label>
+          <input type="radio" name="q64" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q64" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>65.У вас бывают периоды, когда вы необычайно
+        веселы без особой причины?<br>
+        <label>
+          <input type="radio" name="q65" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q65" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>66.Даже находясь в обществе, вы обычно чувствуете себя одиноко?<br>
+        <label>
+          <input type="radio" name="q66" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q66" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>67.Вы считаете, что почти каждый может солгать,
+        чтобы избежать неприятностей?<br>
+        <label>
+          <input type="radio" name="q67" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q67" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>68.Вы чувствуете острее, чем большинство других людей?<br>
+        <label>
+          <input type="radio" name="q68" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q68" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>69.Временами ваша голова работает медленнее,
+        чем обычно?<br>
+        <label>
+          <input type="radio" name="q69" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q69" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>70.Вы часто разочаровываетесь в людях?<br>
+        <label>
+          <input type="radio" name="q70" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q70" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+      <div class="block"><p>71.Вы злоупотребляете спиртными напитками<br>
+        <label>
+          <input type="radio" name="q71" value="Да">
+          Да</label>
+        <br>
+        <label>
+          <input type="radio" name="q71" value="Нет">
+          Нет</label>
+        <br>
+      </p></div>
+   <div class="block"><p>
+    <input type="button" id="calc" value="Подсчитать результаты">
+  </p></div>
+  <div class="block"><p>
+    <label for=""> <button type="submit" width="300px">Отправить</button></label>
+  </p></div>
+      
+     <label for="">  <textarea  name="message"></textarea></label>
+      
+  </form>
+  </div>
+    <script>
+        calc.onclick = function(){
+         var myform = this.form;
+        let L = 0;
+        let F = 0;
+        let K = 0;
+        let Hs = 0;
+        let D = 0;
+        let Hy = 0;
+        let Pd = 0;
+        let Pa =0;
+        let Pt =0;
+        let Se =0;
+        let Ma =0;
+        sum = 0;
+    
+    if(myform.q1.value == 'Да') sum++;
+    if(myform.q11.value == 'Нет' ) L++;
+    if(myform.q24.value == 'Нет' ) L++;
+    if(myform.q47.value == 'Нет' ) L++;
+    if(myform.q53.value == 'Нет' ) L++;
+
+    if(myform.q22.value =='Нет') F++;
+    if(myform.q24.value =='Нет') F++;
+    if(myform.q61.value =='Нет') F++;
+    if(myform.q9.value =='Да') F++;
+    if(myform.q12.value =='Да') F++;
+    if(myform.q9.value =='Да') F++;
+    if(myform.q15.value =='Да') F++;
+    if(myform.q19.value =='Да') F++;
+    if(myform.q30.value =='Да') F++;
+    if(myform.q38.value =='Да') F++;
+    if(myform.q48.value =='Да') F++;
+    if(myform.q49.value =='Да') F++;
+    if(myform.q58.value =='Да') F++;
+    if(myform.q64.value =='Да') F++;
+    if(myform.q69.value =='Да') F++;
+    if(myform.q71.value =='Да') F++;
+
+    if(myform.q11.value =='Нет') K++;
+    if(myform.q23.value =='Нет') K++;
+    if(myform.q31.value =='Нет') K++;
+    if(myform.q33.value =='Нет') K++;
+    if(myform.q34.value =='Нет') K++;
+    if(myform.q36.value =='Нет') K++;
+    if(myform.q40.value =='Нет') K++;
+    if(myform.q41.value =='Нет') K++;
+    if(myform.q43.value =='Нет') K++;
+    if(myform.q51.value =='Нет') K++;
+    if(myform.q56.value =='Нет') K++;
+    if(myform.q61.value =='Нет') K++;
+    if(myform.q65.value =='Нет') K++;
+    if(myform.q67.value =='Нет') K++;
+    if(myform.q69.value =='Нет') K++;
+    if(myform.q70.value =='Нет') K++;
+
+    if(myform.q1.value =='Нет') Hs++;
+    if(myform.q2.value =='Нет') Hs++;
+    if(myform.q6.value =='Нет') Hs++;
+    if(myform.q37.value =='Нет') Hs++;
+    if(myform.q45.value =='Нет') Hs++;
+    if(myform.q9.value =='Да') Hs++;
+    if(myform.q18.value =='Да') Hs++;
+    if(myform.q26.value =='Да') Hs++;
+    if(myform.q32.value =='Да') Hs++;
+    if(myform.q44.value =='Да') Hs++;
+    if(myform.q46.value =='Да') Hs++;
+    if(myform.q55.value =='Да') Hs++;
+    if(myform.q62.value =='Да') Hs++;
+    if(myform.q63.value =='Да') Hs++;
+
+    if(myform.q1.value =='Нет') D++;
+    if(myform.q3.value =='Нет') D++;
+    if(myform.q6.value =='Нет') D++;
+    if(myform.q11.value =='Нет') D++;
+    if(myform.q28.value =='Нет') D++;
+    if(myform.q37.value =='Нет') D++;
+    if(myform.q40.value =='Нет') D++;
+    if(myform.q42.value =='Нет') D++;
+    if(myform.q60.value =='Нет') D++;
+    if(myform.q61.value =='Нет') D++;
+    if(myform.q65.value =='Нет') D++;
+    if(myform.q9.value =='Да') D++;
+    if(myform.q13.value =='Да') D++;
+    if(myform.q18.value =='Да') D++;
+    if(myform.q22.value =='Да') D++;
+    if(myform.q25.value =='Да') D++;
+    if(myform.q36.value =='Да') D++;
+    if(myform.q44.value =='Да') D++;
+
+    if(myform.q1.value =='Нет') Hy++;
+    if(myform.q2.value =='Нет') Hy++;
+    if(myform.q3.value =='Нет') Hy++;
+    if(myform.q11.value =='Нет') Hy++;
+    if(myform.q23.value =='Нет') Hy++;
+    if(myform.q28.value =='Нет') Hy++;
+    if(myform.q29.value =='Нет') Hy++;
+    if(myform.q31.value =='Нет') Hy++;
+    if(myform.q33.value =='Нет') Hy++;
+    if(myform.q35.value =='Нет') Hy++;
+    if(myform.q37.value =='Нет') Hy++;
+    if(myform.q40.value =='Нет') Hy++;
+    if(myform.q41.value =='Нет') Hy++;
+    if(myform.q43.value =='Нет') Hy++;
+    if(myform.q45.value =='Нет') Hy++;
+    if(myform.q50.value =='Нет') Hy++;
+    if(myform.q56.value =='Нет') Hy++;
+    if(myform.q9.value =='Да') Hy++;
+    if(myform.q13.value =='Да') Hy++;
+    if(myform.q18.value =='Да') Hy++;
+    if(myform.q26.value =='Да') Hy++;
+    if(myform.q44.value =='Да') Hy++;
+    if(myform.q46.value =='Да') Hy++;
+    if(myform.q55.value =='Да') Hy++;
+    if(myform.q57.value =='Да') Hy++;
+    if(myform.q62.value =='Да') Hy++;
+            
+    if(myform.q3.value =='Нет') Pd++;
+    if(myform.q28.value =='Нет') Pd++;
+    if(myform.q34.value =='Нет') Pd++;
+    if(myform.q35.value =='Нет') Pd++;
+    if(myform.q41.value =='Нет') Pd++;
+    if(myform.q43.value =='Нет') Pd++;
+    if(myform.q50.value =='Нет') Pd++;
+    if(myform.q65.value =='Нет') Pd++;
+    if(myform.q7.value =='Да') Pd++;
+    if(myform.q10.value =='Да') Pd++;
+    if(myform.q13.value =='Да') Pd++;
+    if(myform.q14.value =='Да') Pd++;
+    if(myform.q15.value =='Да') Pd++;
+    if(myform.q16.value =='Да') Pd++;
+    if(myform.q22.value =='Да') Pd++;
+    if(myform.q27.value =='Да') Pd++;
+    if(myform.q52.value =='Да') Pd++;
+    if(myform.q58.value =='Да') Pd++;
+    if(myform.q71.value =='Да') Pd++;
+
+    if(myform.q28.value =='Нет') Pa++;
+    if(myform.q29.value =='Нет') Pa++;
+    if(myform.q31.value =='Нет') Pa++;
+    if(myform.q67.value =='Нет') Pa++;
+    if(myform.q5.value =='Да') Pa++;
+    if(myform.q8.value =='Да') Pa++;
+    if(myform.q10.value =='Да') Pa++;
+    if(myform.q15.value =='Да') Pa++;
+    if(myform.q30.value =='Да') Pa++;
+    if(myform.q39.value =='Да') Pa++;
+    if(myform.q63.value =='Да') Pa++;
+    if(myform.q64.value =='Да') Pa++;
+    if(myform.q66.value =='Да') Pa++;
+    if(myform.q68.value =='Да') Pa++;
+
+    if(myform.q2.value =='Нет') Pt++;
+    if(myform.q3.value =='Нет') Pt++;
+    if(myform.q42.value =='Нет') Pt++;
+    if(myform.q5.value =='Да') Pt++;
+    if(myform.q7.value =='Да') Pt++;
+    if(myform.q8.value =='Да') Pt++;
+    if(myform.q13.value =='Да') Pt++;
+    if(myform.q17.value =='Да') Pt++;
+    if(myform.q22.value =='Да') Pt++;
+    if(myform.q27.value =='Да') Pt++;
+    if(myform.q36.value =='Да') Pt++;
+    if(myform.q44.value =='Да') Pt++;
+    if(myform.q51.value =='Да') Pt++;
+    if(myform.q57.value =='Да') Pt++;
+    if(myform.q66.value =='Да') Pt++;
+    if(myform.q68.value =='Да') Pt++;
+    
+    if(myform.q3.value =='Нет') Se++;
+    if(myform.q42.value =='Нет') Se++;
+    if(myform.q5.value =='Да') Se++;
+    if(myform.q7.value =='Да') Se++;
+    if(myform.q8.value =='Да') Se++;
+    if(myform.q10.value =='Да') Se++;
+    if(myform.q13.value =='Да') Se++;
+    if(myform.q14.value =='Да') Se++;
+    if(myform.q15.value =='Да') Se++;
+    if(myform.q16.value =='Да') Se++;
+    if(myform.q17.value =='Да') Se++;
+    if(myform.q26.value =='Да') Se++;
+    if(myform.q30.value =='Да') Se++;
+    if(myform.q38.value =='Да') Se++;
+    if(myform.q39.value =='Да') Se++;
+    if(myform.q46.value =='Да') Se++;
+    if(myform.q57.value =='Да') Se++;
+    if(myform.q63.value =='Да') Se++;
+    if(myform.q64.value =='Да') Se++;
+    if(myform.q66.value =='Да') Se++;
+
+    if(myform.q43.value =='Нет') Ma++;
+    if(myform.q4.value =='Да') Ma++;
+    if(myform.q7.value =='Да') Ma++;
+    if(myform.q8.value =='Да') Ma++;
+    if(myform.q21.value =='Да') Ma++;
+    if(myform.q29.value =='Да') Ma++;
+    if(myform.q34.value =='Да') Ma++;
+    if(myform.q38.value =='Да') Ma++;
+    if(myform.q39.value =='Да') Ma++;
+    if(myform.q54.value =='Да') Ma++;
+    if(myform.q57.value =='Да') Ma++;
+    if(myform.q60.value =='Да') Ma++;
+    
+
+
+    if(sum == 1) console.log('Проблемы')
+    if(L >= 3){L ="Шкала лжи в норме "
+      console.log(L)}
+    else{L ="Шкала лжи отрицательная "
+  console.log(L)}
+
+    if(F >= 9){F ="Достоверность в норме"}
+    else{F ="Достоверность не в норме"}
+    
+    if(K >= 9){K="Шкала коррекции в норме"}
+    else{K="Шкала коррекции не в норме"}
+
+    if(Hs >= 8){
+      Hs = "Ипохондрия в норме"
+      console.log(Hs)}
+    else Hs="Ипохондрия не в норме"
+    {console.log(Hs)}
+
+    if(D >= 8){D="Депрессия  в  норме"}
+    else{D="Депрессия  не в норме"}
+
+    if(Hy >= 16){Hy='Истерия в  норме'}
+    else{Hy="Истерия  не в норме"}
+
+    
+    if(Pd >= 16){Pd='Психопатия  в  норме'}
+    else{Pd="Паранойяльность   не в норме"}
+
+    if(Pa >= 7){Pa='Паранойяльность  в  норме'}
+    else{Pa="Паранойяльность   не в норме"}
+
+    if(Pt >= 7){Pt='Психастения  в  норме'}
+    else{Pt="Психастения   не в норме"}
+
+    if(Se >= 10){Se='Шизоидность  в  норме'}
+    else{Se="Шизоидность   не в норме"}
+
+    if(Ma >= 10){Ma='Гипомания в норме'}
+    else{Ma="Гипомания не в норме"}
+
+    myform.message.value = L +","+F+","+K+","+Hs+","+D+","+Hy+','+Pd+","+Pa+","+Pt+","+Se+","+Ma
+};
+       
+    
+</script>
+</body>
+</html>
